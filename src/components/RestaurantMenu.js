@@ -5,7 +5,7 @@ import resMenu from "../utils/mockRestaurantMenu";
 import { useParams } from "react-router";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
- 
+ import {useState} from 'react';
 const RestaurantMenu=()=>{
 
 // useEffect(()=>{
@@ -16,6 +16,8 @@ const RestaurantMenu=()=>{
 // const [resInfo,setResInfo]=useState({});
 const {resId}=useParams();
 const resInfo=useRestaurantMenu(resId);
+const [showIndex,setShowIndex]=useState(0);
+
 
 
 // const fetchMenu=()=>{
@@ -57,7 +59,9 @@ if(!resInfo){
              <ul >
                 {accCards?.map((category,index)=>{
                     // console.log(category);
-                    return (<li><RestaurantCategory key={category.id} categoryData={category}/></li>)
+                    return (<li key={category.id}><RestaurantCategory  categoryData={category}
+                    showItems={index === showIndex ? true : false} setShowIndex={()=> setShowIndex(index)}
+                    /></li>)
                     })}
                 </ul>   
             <h2 className="mt-4 mb-2 font-bold text-lg">MENU</h2>

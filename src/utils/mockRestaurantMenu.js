@@ -615,6 +615,8 @@ accCards: [
     costForTwo:600,
     img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/q6ndpfg0ee2oiyj2ptog",
     time:"35-40 mins",
+    other:{distance:6,fee:78},
+
     items:[
         {foodName:"Lemon Rice",cost:200,id:601},
         {foodName:"Veg Biryani",cost:150,id:602},
@@ -815,7 +817,8 @@ accCards: [
         {foodName:"Pineapple Cake",cost:120,id:705},
         {foodName:"Blueberry Cake",cost:100,id:706},
         {foodName:"Any Pastry",cost:100,id:707},
-    ],
+        ],
+    other:{distance:8.3,fee:90},
     accCards: [
         {
           title: "Fresh Breads",

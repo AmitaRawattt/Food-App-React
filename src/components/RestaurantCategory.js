@@ -2,11 +2,13 @@ import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import ItemList from "./itemList";
 
-const RestaurantCategory=({categoryData})=>{
+const RestaurantCategory=({categoryData,showItems,setShowIndex})=>{
     const {itemCard,title}=categoryData;
-    const [showItems,setShowItems]=useState(false);
+    // const [showItems,setShowItems]=useState(false);
   const handleClick=()=>{
-setShowItems(!showItems);
+
+setShowIndex();
+
   }
 
     return (

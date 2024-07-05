@@ -1,11 +1,18 @@
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 import { LOGO_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
+import UserContext from "../utils/UserContext";
+import { useSelector } from 'react-redux';
 
 const Header=()=>{
     const status=useOnlineStatus();
-   const [btnName,setBtnName]=useState('Login')
+   const [btnName,setBtnName]=useState('Login');
+const data=useContext(UserContext);
+const {loggedInUser}=data;
+const cartItems=useSelector((store)=>store.cart.items)
+console.log('items',cartItems)
+
     return (
         <div className="flex header justify-between shadow-md m-2">
             <div className='logo-container'>
@@ -23,13 +30,14 @@ const Header=()=>{
                 <li className='px-4'><Link to='/about'>About us</Link></li>
                 <li className='px-4'><Link to='/contact'>Contact Us</Link></li>
                 <li className='px-4'><Link to='/grocery'>Grocery</Link></li>
+                <li className='px-4 font-bold '><Link to='/cart'>Cart 🛒 ({cartItems.length} items)</Link></li>
              
                <button className="login-btn" onClick={()=>{
 
                   btnName==='Login'? setBtnName('Logout') : setBtnName("Login");
                }
                }>{btnName}</button>
-
+                 <li className='px-4 font-bold'>{loggedInUser}</li>
             </ul>
             </div>
         </div>

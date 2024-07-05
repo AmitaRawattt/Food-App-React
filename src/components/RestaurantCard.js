@@ -23,8 +23,8 @@ const RestaurantCard=({resData})=>{
 export const withPromotedLabel=(RestaurantCard)=>{
     return(props)=>{
         return(
-            <div>
-                <label className="absolutem-2 p-2 rounded-md bg-black text-white ">Promoted</label>
+            <div className="relative z-0">
+                <label className="absolute p-2 rounded-md bg-black text-white z-10">Promoted</label>
                 <RestaurantCard {...props}/>
             </div>
         );
