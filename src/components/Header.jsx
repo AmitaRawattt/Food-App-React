@@ -11,7 +11,7 @@ const Header=()=>{
 const data=useContext(UserContext);
 const {loggedInUser}=data;
 const cartItems=useSelector((store)=>store.cart.items)
-console.log('items',cartItems)
+// console.log('items',cartItems)
 
     return (
         <div className="flex header justify-between shadow-md m-2">

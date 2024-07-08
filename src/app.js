@@ -10,7 +10,7 @@ import RestaurantMenu from './components/RestaurantMenu';
 import UserContext from "./utils/UserContext";
 import {Provider} from 'react-redux';
 import appStore from './utils/appStore';
-
+import Test from './components/Test'
 
 // import './tailwind.css';
 
@@ -19,6 +19,7 @@ import { Suspense,lazy } from 'react';
 import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
 
 const Grocery=lazy(()=>import('./components/Grocery'));
+import Cart from './components/Cart';
 
 
 const AppLayout =()=>{
@@ -65,10 +66,18 @@ const appRouter=createBrowserRouter([
         element:<Suspense fallback={(<h1>Loading............</h1>)}><Grocery/></Suspense>
     },
     {
+        path:'/cart',
+        element:<Cart/>
+    },
+    {
         path:'/restaurants/:resId',
         element:<RestaurantMenu/>
     },
-
+,
+{
+    path:'/test',
+    element:<Test/>
+}
     ]
         },
         

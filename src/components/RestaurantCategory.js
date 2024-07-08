@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
-import ItemList from "./itemList";
+import ItemList from "./ItemList";
 
 const RestaurantCategory=({categoryData,showItems,setShowIndex})=>{
     const {itemCard,title}=categoryData;

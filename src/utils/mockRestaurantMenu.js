@@ -152,101 +152,102 @@ accCards: [
         {foodName:"Cold drink",cost:70,id:205},
         {foodName:"Wrap",cost:100,id:206},
     ],
+    accCards: [
+      {
+        title: "Chef's Specials",
+        itemCard: [
+          {
+            itemName: "Zinger Burger",
+            itemDesc: "Serve 1 | Medium Spicy | Crispy chicken fillet, lettuce, and mayo in a sesame bun",
+            itemPrice: 250,
+            id: 3001
+          },
+          {
+            itemName: "Hot & Crispy Chicken",
+            itemDesc: "Serve 1 | Spicy | 2 pieces of signature KFC chicken",
+            itemPrice: 220,
+            id: 3002
+          }
+        ],
+        id: 3000
+      },
+      {
+        title: "Signature Dishes",
+        itemCard: [
+          {
+            itemName: "Popcorn Chicken",
+            itemDesc: "Serve 1 | Bite-sized pieces of crispy chicken",
+            itemPrice: 180,
+            id: 4001
+          },
+          {
+            itemName: "Chicken Bucket",
+            itemDesc: "Serve 4 | Mix of 8 pieces of Original Recipe and Hot & Crispy chicken",
+            itemPrice: 650,
+            id: 4002
+          }
+        ],
+        id: 4000
+      },
+      {
+        title: "New Arrivals",
+        itemCard: [
+          {
+            itemName: "Chicken Strips",
+            itemDesc: "Serve 1 | Spicy | 4 crispy chicken strips",
+            itemPrice: 200,
+            id: 5001
+          },
+          {
+            itemName: "Chocolate Brownie Sundae",
+            itemDesc: "Serve 1 | Rich chocolate brownie with vanilla ice cream",
+            itemPrice: 150,
+            id: 5002
+          }
+        ],
+        id: 5000
+      },
+      {
+        title: "Vegetarian Delights",
+        itemCard: [
+          {
+            itemName: "Veg Zinger Burger",
+            itemDesc: "Serve 1 | Crispy veg patty, lettuce, and mayo in a sesame bun",
+            itemPrice: 200,
+            id: 6001
+          },
+          {
+            itemName: "Veg Rice Bowl",
+            itemDesc: "Serve 1 | Spicy rice with a crispy veg patty",
+            itemPrice: 220,
+            id: 6002
+          }
+        ],
+        id: 6000
+      },
+      {
+        title: "Family Combos",
+        itemCard: [
+          {
+            itemName: "Family Feast",
+            itemDesc: "Serve 4 | 8 pieces of chicken, 2 large fries, 4 drinks",
+            itemPrice: 900,
+            id: 7001
+          },
+          {
+            itemName: "Big Bucket Meal",
+            itemDesc: "Serve 4 | 12 pieces of chicken, 4 coleslaws, 4 drinks",
+            itemPrice: 1100,
+            id: 7002
+          }
+        ],
+        id: 7000
+      }
+    ]
+    ,
     img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/1b92e544-fce7-45ac-941a-50092e3037a5_55490.JPG"},
     
-    accCards: [
-        {
-          title: "Chef's Specials",
-          itemCard: [
-            {
-              itemName: "Zinger Burger",
-              itemDesc: "Serve 1 | Medium Spicy | Crispy chicken fillet, lettuce, and mayo in a sesame bun",
-              itemPrice: 250,
-              id: 3001
-            },
-            {
-              itemName: "Hot & Crispy Chicken",
-              itemDesc: "Serve 1 | Spicy | 2 pieces of signature KFC chicken",
-              itemPrice: 220,
-              id: 3002
-            }
-          ],
-          id: 3000
-        },
-        {
-          title: "Signature Dishes",
-          itemCard: [
-            {
-              itemName: "Popcorn Chicken",
-              itemDesc: "Serve 1 | Bite-sized pieces of crispy chicken",
-              itemPrice: 180,
-              id: 4001
-            },
-            {
-              itemName: "Chicken Bucket",
-              itemDesc: "Serve 4 | Mix of 8 pieces of Original Recipe and Hot & Crispy chicken",
-              itemPrice: 650,
-              id: 4002
-            }
-          ],
-          id: 4000
-        },
-        {
-          title: "New Arrivals",
-          itemCard: [
-            {
-              itemName: "Chicken Strips",
-              itemDesc: "Serve 1 | Spicy | 4 crispy chicken strips",
-              itemPrice: 200,
-              id: 5001
-            },
-            {
-              itemName: "Chocolate Brownie Sundae",
-              itemDesc: "Serve 1 | Rich chocolate brownie with vanilla ice cream",
-              itemPrice: 150,
-              id: 5002
-            }
-          ],
-          id: 5000
-        },
-        {
-          title: "Vegetarian Delights",
-          itemCard: [
-            {
-              itemName: "Veg Zinger Burger",
-              itemDesc: "Serve 1 | Crispy veg patty, lettuce, and mayo in a sesame bun",
-              itemPrice: 200,
-              id: 6001
-            },
-            {
-              itemName: "Veg Rice Bowl",
-              itemDesc: "Serve 1 | Spicy rice with a crispy veg patty",
-              itemPrice: 220,
-              id: 6002
-            }
-          ],
-          id: 6000
-        },
-        {
-          title: "Family Combos",
-          itemCard: [
-            {
-              itemName: "Family Feast",
-              itemDesc: "Serve 4 | 8 pieces of chicken, 2 large fries, 4 drinks",
-              itemPrice: 900,
-              id: 7001
-            },
-            {
-              itemName: "Big Bucket Meal",
-              itemDesc: "Serve 4 | 12 pieces of chicken, 4 coleslaws, 4 drinks",
-              itemPrice: 1100,
-              id: 7002
-            }
-          ],
-          id: 7000
-        }
-      ]
-      
+   
 
    },
     {data:{
